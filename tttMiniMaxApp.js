@@ -193,6 +193,7 @@ restartButton.addEventListener('click', () => {
     board = Array(9).fill("");
     coinFlipDisplayBox.innerHTML = '';
     coinFlipDisplayBox.style.opacity = '0';
+    cells.forEach(cell => cell.removeEventListener('click', cellClickHandler));
 });
 
 
