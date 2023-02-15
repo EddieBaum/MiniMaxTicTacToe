@@ -50,7 +50,7 @@ function checkWin(board) {
             return humanMark;
         } else if (board[combo[0]] === aiMark && board[combo[0]] === board[combo[1]] && board[combo[1]] === board[combo[2]]) {
             winningMessageScreen.style.display = 'flex';
-            winDisplayMessage.innerHTML = aiMark + ' WINS!';
+            winDisplayMessage.innerHTML = 'MiniMax WINS!';
             return aiMark;
         }
     }
